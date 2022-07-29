@@ -1,0 +1,19 @@
+ input {
+        background-color:deepskyblue;
+        cursor: pointer;
+        text-transform: uppercase;
+      	position: relative;
+	font-family: cambria;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+ 	text-align: center;
+      }
+      input:hover {
+  background-color: darkblue;
+}
+.center{
+display: flex;
+justify-content: center;
+align-items: center;
+}

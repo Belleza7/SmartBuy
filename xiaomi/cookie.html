@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<title>Registration form
+			
+		</title>
+<link rel="stylesheet" href="text1.css">
+		<script>
+		function check(n)
+{
+var male=document.getElementById('m');
+var female=document.getElementById('f');
+var others=document.getElementById('o');
+var gender;
+if(n==0)
+{
+male.checked=true;
+female.checked=false;
+others.checked=false;
+gender="male";
+}else if(n==1)
+{
+male.checked=false;
+female.checked=true;
+others.checked=false;
+gender="female";
+}
+else
+{
+male.checked=false;
+female.checked=false;
+others.checked=true;
+gender="others";
+}
+}
+function wc()
+{
+if(document.myForm.c_name.value==""||document.myForm.c_l.value==""||document.myForm.c_age.value==""||document.myForm.c_city.value==""
+||document.myForm.c_state.value==""||document.myForm.c_loc.value==""||document.myForm.c_pin.value==""||document.myForm.c_e.value==""||
+document.myForm.c_n.value==""||document.myForm.c_u.value==""||document.myForm.c_p.value=="")
+{
+alert("All fields are mandatory");
+exit;
+}
+cookievalue=escape(document.myForm.c_name.value)+";";
+document.cookie="First Name="+cookievalue;
+cookievalue=escape(document.myForm.c_l.value)+";";
+document.cookie="Last Name="+cookievalue;
+cookievalue=escape(document.myForm.c_age.value)+";";
+document.cookie="Age= "+cookievalue;
+cookievalue=escape(document.myForm.c_city.value)+";";
+
+document.cookie="City="+cookievalue;
+cookievalue=escape(document.myForm.c_state.value)+";";
+document.cookie="State="+cookievalue;
+cookievalue=escape(document.myForm.c_loc.value)+";";
+document.cookie="Location="+cookievalue;
+cookievalue=escape(document.myForm.c_pin.value)+";";
+document.cookie="Pin-Code="+cookievalue;
+cookievalue=escape(document.myForm.c_e.value)+";";
+document.cookie="Email-ID="+cookievalue;
+cookievalue=escape(document.myForm.c_n.value)+";";
+document.cookie="Contact-number="+cookievalue;
+cookievalue=escape(document.myForm.c_u.value)+";";
+document.cookie="Username="+cookievalue;
+cookievalue=escape(document.myForm.c_p.value)+";";
+document.cookie="Password="+cookievalue;
+var txt;
+txt="Cookies of your information created!<br>";
+document.write("<center>"+"<h1>"+txt.fontcolor("darkblue")+"</h1>"+"</center>");
+var allcook=document.cookie;
+var val=[11];
+val=allcook.split(";");
+for(i=0;i<11;i++)
+{
+txt=val[i];
+document.write("<h2>"+txt.fontcolor("royalblue")+"</h2>");
+}
+}
+
+		</script>
+
+
+	</head>
+<style>
+.bttn
+		{
+		background-color:royalblue;
+		color:white;
+		border:white;
+		text-align:center;
+		font-size:20px;
+		
+		}
+.bttn:hover
+{
+background-color:darkblue;
+}
+
+</style>
+	<body>
+	<form name="myForm">
+	<h1 align=center>Registration Form</h1>
+<h2 align=center>Fill in the following details</h2>
+
+<h3>First Name:</h3><input type="text" name="c_name"/><br>
+<h3>Last Name:</h3><input type="text" name="c_l"/><br>
+<h3>Age:</h3><input type="text" name="c_age"/><br>
+<h3>Gender:</h3>
+<div class="radio-item">
+<input type="radio" id="m" name="male" onclick="check(0)"/>Male
+<input type="radio" name="female" id="f" onclick="check(1)">Female
+<input type="radio" name="others" id="o" onclick="check(2)">Others</div><br>
+<h3>Address:</h3><h4>City</h4><input type="text" name="c_city"/>
+<h4>State</h4><input type="text" name="c_state"/>
+<h4>Location</h4><input type="text" name="c_loc"/>
+<h4>Pin-code</h4><input type="text" name="c_pin"/><br>
+<h3>Email-Id:</h3><input type="text" name="c_e"/><br>
+<h3>Contact Number:</h3><input type="text" name="c_n"/><br>
+<h3>Username:</h3><input type="text" name="c_u"/><br>
+<h3>Password:</h3><input type="password" name="c_p"/><br>
+<div>
+<center><input type="button" class="bttn" value="Submit" onclick="wc()"style=height:50;width:200></center></br>
+</div></form>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+ input {
+        
+        cursor: pointer;
+        text-transform: uppercase;
+      	position: relative;
+	font-family: cambria;
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+ 	text-align: center;
+      }
+      input:hover {
+  background-color: powderblue;
+}
