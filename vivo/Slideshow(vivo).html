@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="butt.css">
+		<link rel="stylesheet" href="text.css">
+	</head>
+		<style>
+			.bttn
+		{
+		background-color:blue;
+		color:white;
+		border:white;
+		text-align:center;
+		font-size:20px;
+		height:70px;
+		width:250px;
+		}
+		</style>
+		<body onload="window_onload()">
+	
+		<img src="vivo.gif" alt="Not found" height="200" width="1500">
+
+	<h2 align="center"><b>5.VIVO</b></h2>
+	<center>
+			<a href="javascript:LinkBan()">
+			 <img src="vivo1.jpg" name="Img" id="Img" width="500" height="500"/>
+			 </a>
+			 <br><br>
+			 <input type="button" id="btn1" value="Previous" onclick="showPre()"/>
+			 <input type="button" id="btn2" value="Next" onclick="shownext()"/>
+		</center>
+	<p align="center">->Vivo Communication Technology Co. Ltd., stylized as vivo, is a Chinese technology company headquartered in Dongguan,<br>
+	 Guangdong that designs and develops smartphones, smartphone accessories, software and online services.<br>
+	 It is a subsidiary of BBK Electronics along with Oppo, OnePlus and Realme.<br>
+	->Product line: Vivo Y53<br>
+	Customer service: 1800 102 3388<br>
+	Parent organization: BBK Electronics<br>
+	Founded: 2009, Dongguan, China<br>
+	CEO: Shen Wei (2009–)<br>
+	Founders: Duan Yongping, Shen Wei</p>
+	<br>
+	<center>
+	<img src="new.gif" name="mygif" height="50" width="50" alt="not found"/>
+		<br>
+	 <img class="center" src="vivo6.jpg" height="400" width="300" alt="not found">
+	<p align="center">VIVO X50 SERIES<br>
+	PHOTOGRAPHY.REDEFINED<br>
+	EXTREME NIGHT VISION| GIMBAL STABALIZATION*<br>
+	FROM 49,990 INR</p>
+	<input type="button" class="bttn" value="Buy" onclick="myfunction()">
+	</center>
+	
+
+	<script>
+			var imgs=new Array("vivo1.jpg","vivo2.jpg","vivo3.jpeg","vivo4.jpg","vivo5.jpg","buy.gif");
+			var imgLink=new Array('vivo_x50.html','vivo_v20.html','vivo_y50.html','vivo_s1.html','vivo_z5x.html','vivo(Models).html');
+			var i=0;
+			function LinkBan()
+			{
+				document.location.href="file:///C:/Users/Tahera/Documents/CSS/micro/vivo/"+imgLink[i];
+			}			
+			function showPre()
+			{
+				if(document.images)
+				{
+					--i;
+					if(i<0)
+					{
+						i=imgs.length-1;
+					}
+				Img.src=imgs[i];
+				}
+			}
+			function shownext()
+			{
+				if(document.images)
+				{
+					i++;
+					if(i==imgs.length)
+					{
+						i=0;
+					}
+				Img.src=imgs[i];
+				}
+			}
+	var i,imgs,pic,anim,imgs1;
+			function window_onload()
+			{
+				i=0;
+			}
+
+			function LinkBan()
+			{
+				document.location.href=imgLink[i];
+			}			
+			function showPre()
+			{
+				if(document.images)
+				{
+					--i;
+					if(i<0)
+					{
+						i=imgs.length-1;
+					}
+				Img.src=imgs[i];
+				}
+			}
+			function shownext()
+			{
+				if(document.images)
+				{
+					i++;
+					if(i==imgs.length)
+					{
+						i=0;
+					}
+				Img.src=imgs[i];
+				}
+			}
+		function myfunction()
+		{
+			window.location.href="file:///C:/Users/Tahera/Documents/CSS/micro/vivo/vivo(Models).html";
+		}	
+		</script>
+	</body>
+</html>

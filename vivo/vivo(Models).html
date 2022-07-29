@@ -1,0 +1,110 @@
+<html>
+<head>
+
+		<link rel="stylesheet" href="butt.css">
+		<link rel="stylesheet" href="text.css">
+
+<script src="cart.js"></script>
+</head>
+<style>
+		.myDiv {
+  	border: 5px outset grey;
+  	background-color: white;
+  	text-align: center;
+	}
+
+		.float-img
+		{
+		float:left;
+		margin-right:100px;
+		margin-bottom:10px;
+		margin-left:20px;
+		padding-left:50px;
+		}
+		.bttn
+		{
+		background-color:royalblue;
+		color:white;
+		border:white;
+		text-align:center;
+		font-size:20px;
+		}
+input:hover {
+  background-color: darkblue;
+}
+</style>
+
+<body onload="disable()">
+
+<div class="myDiv">  
+	
+	<img src="vivo1.jpg" class="float-img"  alt="Not Found" style="height:300;width:500;" align="left"/>
+	<h2 style="color:tomato;"><b>VIVO X50(128GB)<br></h2>
+	<h1 style="color:grey;">47,999 <del>50,000</del> INR</br></h1>
+	<h2>->8 GB RAM | 128 GB ROM</br>
+->16.66 cm (6.56 inch) Full HD+ E3 Super AMOLED Display</br>
+->48MP + 13MP + 8MP + 5MP | 32MP Front Camera</br>
+->4200 mAh Lithium-ion Battery</br>
+->Qualcomm Snapdragon 730 Processor</br>
+->33W Vivo FlashCharge 2.0</h2></br>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('VIVOX50','47999')" style=height:50;width:200></center></br>
+  
+<div class="myDiv">
+		<img src="vivo2.jpg" class="float-img" alt="Not Found" style="height:300;width:500;" align="left"/>
+		<h2 style="color:tomato;"><b>VIVO V20(128 GB)<br></h2>
+	<h1 style="color:grey;">28,990 INR <del>30,800</del> 7% OFF</b></h1>
+	<h2>->8 GB RAM | 128 GB ROM</br>
+->16.66 cm (6.56 inch) Full HD+ E3 Super AMOLED Display</br>
+->48MP + 13MP + 8MP + 5MP | 32MP Front Camera</br>
+->4200 mAh Lithium-ion Battery</br>
+->Qualcomm Snapdragon 730 Processor</br>
+->33W Vivo FlashCharge 2.0</h2></br>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('VIVOV20','28990')" style=height:50;width:200></center></br>
+  
+<div class="myDiv">
+		<img src="vivo3.jpeg"  class="float-img" alt="Not Found" style="height:300;width:500;" align="left"/>
+		<h2 style="color:tomato;"><b>VIVO Y50(128 GB)<br></h2>
+	<h1 style="color:grey;">24,499 INR <del>27,989</del> 9% OFF</b></h1>
+	<h2>->8 GB RAM | 128 GB ROM</br>
+->16.66 cm (6.56 inch) Full HD+ E3 Super AMOLED Display</br>
+->48MP + 13MP + 8MP + 5MP | 32MP Front Camera</br>
+->4200 mAh Lithium-ion Battery</br>
+->Qualcomm Snapdragon 730 Processor</br>
+->33W Vivo FlashCharge 2.0</h2></br>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('VIVOY50','24999')" style=height:50;width:200></center></br>
+
+<div class="myDiv">
+		<img src="vivo4.jpg" class="float-img" alt="Not Found" style="height:300;width:300;" align="center"/>
+		<h2 style="color:tomato;"><b>VIVO S1 PRIME(256 GB)<br></h2>
+	<h1 style="color:grey;">58,500 INR <del>55,860</del> 7% OFF</br></h1>
+	<h2>->8 GB RAM | 256 GB ROM</br>
+->16.66 cm (6.56 inch) Full HD+ E3 Super AMOLED Display</br>
+->48MP + 13MP + 8MP + 5MP | 32MP Front Camera</br>
+->4200 mAh Lithium-ion Battery</br>
+->Qualcomm Snapdragon 730 Processor</br>
+->33W Vivo FlashCharge 2.0</h2>
+	<center><input type="button" class="bttn" value="Add To Cart"  onclick="cart('VIVOSIPRIME','58500')" style=height:50;width:200></center></br>
+  
+		
+
+<div class="myDiv">
+		<img src="vivo5.jpg"  class="float-img" alt="Not Found" style="height:300;width:300;"/>
+		<h2 style="color:tomato;"><b>VIVO Z5X(256 GB)<br></h2>
+	<h1 style="color:grey;">28,790 INR <del>30,800</del> 7% OFF</b></h1>
+	<h2>->8 GB RAM | 256 GB ROM</br>
+->16.66 cm (6.56 inch) Full HD+ E3 Super AMOLED Display</br>
+->48MP + 13MP + 8MP + 5MP | 32MP Front Camera</br>
+->4200 mAh Lithium-ion Battery</br>
+->Qualcomm Snapdragon 730 Processor</br>
+->33W Vivo FlashCharge 2.0</h2>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('VIVOZ5X','28790')" style="height:50;width:200"></center></br>
+  
+</div>
+<div class="myDiv">
+	<br><input type="button" class="bttn" value="View Cart" onclick="vcart('VIVO Shopping Cart')" style="height:50;width:200">
+
+<input type="button" class="bttn" value="Remove Item" onclick="rcart('VIVO Shopping Cart')" style="height:50;width:200"></br></br>
+<input type="text" id="t1" value="Enter product to be removed" style="color:darkblue;background-color:lightblue;"/></br>
+</div>
+</body>
+</html>

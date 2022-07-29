@@ -1,0 +1,151 @@
+<html>
+	<head>
+		<title>
+			vivo_v20
+		</title>
+		<link rel="stylesheet" href="butt.css">
+	</head>
+	<style>
+		td, th {
+			border: 1px solid #E6E6FA;
+			text-align: left;
+			padding: 8px;
+			font-size:25px;
+		}
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+		.float-img{
+			float:left;
+			margin-right:100px;
+			margin-bottom:10px;
+			padding.left: 20px;
+			margin-left:20px;
+		}
+		.padding-table-column td{
+			padding:10 15px;
+		}
+		.vl {
+			border-left: 3px solid DARKSLATEGRAY ;
+			height:300px;
+			position: absolute;
+			left: 70%;
+			margin-left: 30px;
+			top: 150px;
+			margin-right:10px;
+			}
+			.button {
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+			margin: 4px 2px;
+			cursor: pointer;
+			style-align:center;
+			margin-left: 121px;
+			margin-top: 30px;
+			}
+		</style>
+	<script>
+		var Banner=new Array("vivo_v20(1).jpg","vivo_v20(2).jpg","vivo_v20(3).jpg","vivo_v20(4).jpg","vivo_v20(5).jpg");
+		var count=0;
+		function rotate()
+		{
+			if(document.images)
+			{
+				count++;
+				if(count==Banner.length)
+				{
+					count=0;
+				}
+				document.img1.src=Banner[count];
+				setTimeout("rotate()",1000);
+			}
+		}
+		function myfunction()
+		{
+			window.location.href="file:///C:/Users/hp/OneDrive/Desktop/CSS%20WEBSITE/vivo/vivo(Models).html";
+		}
+	</script>
+	<body onload="rotate()">
+			<center><font size="20px"><b>Vivo</b></font></center><br>
+			<img src="vivo_v20(1).jpg" width="380" height="470" name="img1" class="float-img" align="left" title="Vivo V20"/>
+				<font size="10px"><b>Vivo V20</b></font>
+				<div class="vl">
+					<font size="5px"><br>
+					Deal Price:<font size="10px" color="ROYALBLUE">₹26,990</font><br>
+					Offer Price: ₹26,990<strike></strike><br>
+					MRP:₹26,990<strike></strike> (Inclusive of all taxes)<br>
+					<font color="green">You Save: 0%(₹0)</font><br>
+					<input type="button" value="ADD TO CART" id="btn1" onclick="myfunction()" class="button"/>
+					</font>
+				</div>
+				<hr><font size="5px">
+				<li>Rear Camera	64 MP + 8 MP + 2 MP</li>
+				<li>Battery	 4000 mAh</li>
+				<li>Screen Resolution 1080 x 2400 pixels</li>
+				<li>Pixel Density	409 ppi</li>
+				<li>Octa core (2.3 GHz, Dual core, Kryo 465<br> 1.8 GHz, Hexa Core, Kryo 465)</li>
+				<li>RAM	8 GB</li>
+				<li>Flash	yes Dual-color LED Flash</li>
+				<li>Digital Zoom, Auto Flash, Face detection</li>
+				<li>44 MP f/2.0, Wide Angle Primary Camera</li>
+				<li>More about Vivo V20 click on  link bellow</li>
+				<a href='#disc'><font color="DEEPSKYBLUE" size="5px"><b>Technical Details</b></font></a>
+				</font><br><br><br><br><br><br><br>
+				<img width="1340" src="https://static.toiimg.com/thumb/msid-78489872,width-1070,height-580,imgsize-110870,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"/>
+				<br><br><br><center><font size="20px" id="disc"><b> Technical Details<br><br></font></b>
+				
+				<table align="center" class="padding-table-column" border="1px" rules="rows" size="10px">
+					<tr>
+						<th>Processor</th>
+						<td>Qualcomm Snapdragon 720G</td>
+					</tr>
+					<tr>
+						<th>Rear Camera and Front Camera</th>
+						<td>64 MP + 8 MP + 2 MP and 44 MP</td>
+					</tr>
+					<tr>
+						<th>Battery</th>		
+						<td>4000 mAh</td>
+					</tr>
+					<tr>
+						<th>Operating System</th>
+						<td>Android v10 (Q)</td>
+					</tr>
+					<tr>
+						<th>Network</th>
+						<td>4G: Available (supports Indian bands), 3G: Available, 2G: Available</td>
+					</tr>
+					<tr>
+						<th>Height and Width</th>
+						<td>161.3 mm  and 74.2 mm</td>
+					</tr>
+					<tr>
+						<th>Screen Resolution</th>
+						<td>1080 x 2400 pixels</td>
+					</tr>
+					<tr>
+						<th>Shooting Modes and Camera Features</th>
+						<td>Continuos Shooting, High Dynamic Range mode (HDR) and Digital Zoom, Auto Flash, Face detection, Touch to focus</td>
+					</tr>
+					<tr>
+						<th>Fingerprint Sensor</th>
+						<td>Fingerprint Sensor is avilable</td>
+					</tr>
+					<tr>
+						<th>Fingerprint Sensor Type</th>
+						<td>Optical</td>
+					</tr>
+					<tr>
+						<th>Other Sensors</th>
+						<td>Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope</td>
+					</tr>
+				</table>
+				<br><br><br><br><br>
+				<img width="1340" src="https://i.ytimg.com/vi/6jq0wf2xQmA/maxresdefault.jpg"/>
+			</body>
+</html>

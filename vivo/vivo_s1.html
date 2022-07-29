@@ -1,0 +1,151 @@
+<html>
+	<head>
+		<title>
+			vivo_s1
+		</title>
+		<link rel="stylesheet" href="butt.css">
+	</head>
+	<style>
+		td, th {
+			border: 1px solid #E6E6FA;
+			text-align: left;
+			padding: 8px;
+			font-size:25px;
+		}
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+		.float-img{
+			float:left;
+			margin-right:100px;
+			margin-bottom:10px;
+			padding.left: 20px;
+			margin-left:20px;
+		}
+		.padding-table-column td{
+			padding:10 15px;
+		}
+		.vl {
+			border-left: 3px solid DARKSLATEGRAY ;
+			height:300px;
+			position: absolute;
+			left: 70%;
+			margin-left: 30px;
+			top: 150px;
+			margin-right:10px;
+			}
+			.button {
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+			margin: 4px 2px;
+			cursor: pointer;
+			style-align:center;
+			margin-left: 121px;
+			margin-top: 30px;
+			}
+		</style>
+	<script>
+		var Banner=new Array("vivo_s1(1).jpg","vivo_s1(2).jpg","vivo_s1(3).jpg","vivo_s1(4).jpg","vivo_s1(5).jpg");
+		var count=0;
+		function rotate()
+		{
+			if(document.images)
+			{
+				count++;
+				if(count==Banner.length)
+				{
+					count=0;
+				}
+				document.img1.src=Banner[count];
+				setTimeout("rotate()",1000);
+			}
+		}
+		function myfunction()
+		{
+			window.location.href="file:///C:/Users/hp/OneDrive/Desktop/CSS%20WEBSITE/vivo/vivo(Models).html";
+		}
+	</script>
+	<body onload="rotate()">
+			<center><font size="20px"><b>Vivo</b></font></center><br>
+			<img src="vivo_s1(1).jpg" width="380" height="440" name="img1" class="float-img" align="left" title="Vivo S1"/>
+				<font size="10px"><b>Vivo S1</b></font>
+				<div class="vl">
+					<font size="5px"><br>
+					Deal Price:<font size="10px" color="ROYALBLUE">₹ 17,990</font><br>
+					Offer Price: ₹ 17,990<strike></strike><br>
+					MRP:<strike>₹ 20,990.00</strike>(Inclusive of all taxes)<br>
+					<font color="green">You Save:	14%(₹ 3,000.00 )</font><br>
+					<input type="button" value="ADD TO CART" id="btn1" onclick="myfunction()" class="button"/>
+					</font>
+				</div>
+				<hr><font size="5px">
+				<li>Dimension 16 x 0.8 x 7.5 cm; 179 Grams</li>
+				<li>Batteries 1 Lithium ion batteries required</li>
+				<li>1080 x 2340 pixels, 19.5:9 ratio </li>
+				<li>Resolution 1080 x 2340</li>
+				<li>2x2GHz Cortex-A75|6x1.7GHz Cortex-A55</li>
+				<li>Funtouch OS 9 (based on Android 9.0)</li>
+				<li>Single SIM or Dual SIM/Standby Mode</li>
+				<li>Dual Fast Charging</li>
+				<li>ROM 64GB, 128GB</li>
+				<li>More about Vivo S1 click on  link bellow</li>
+				<a href='#disc'><font color="DEEPSKYBLUE" size="5px"><b>Technical Details</b></font></a>
+				</font><br><br><br><br><br><br><br>
+				<img width="1340" src="https://cdn.pickr.com.au/wp-content/uploads/2019/09/04FE64ED-8139-4BDF-9205-AD39BA1A2123.jpeg"/>
+				<br><br><br><center><font size="20px" id="disc"><b> Technical Details<br><br></font></b>
+				
+				<table align="center" class="padding-table-column" border="1px" rules="rows" size="10px">
+					<tr>
+						<th>RAM</th>
+						<td>6 GB</td>
+					</tr>
+					<tr>
+						<th>Product Dimensions</th>
+						<td>16 x 0.8 x 7.5 cm; 179 Grams</td>
+					</tr>
+					<tr>
+						<th>Batteries</th>		
+						<td>1 Lithium ion batteries required. (included)</td>
+					</tr>
+					<tr>
+						<th>Special features</th>
+						<td>Virtual Gyroscope, Fingerprint, Dual SIM, E-compass, Accelerometer, GPS, Ambient Light sensor, , Video Player, Music Player, Proximity sensor</td>
+					</tr>
+					<tr>
+						<th>Display technology</th>
+						<td>1080 x 2340 pixels, 19.5:9 ratio (~404 ppi density),Always-on display,6.38 inches, 99.9 cm2</td>
+					</tr>
+					<tr>
+						<th>Resolution</th>
+						<td>1080 x 2340</td>
+					</tr>
+					<tr>
+						<th>Item Weight</th>
+						<td>179 g</td>
+					</tr>
+					<tr>
+						<th>OS Type</th>
+						<td>Android OS  </td>
+					</tr>
+					<tr>
+						<th>Weight</th>
+						<td>179g</td>
+					</tr>
+					<tr>
+						<th>Rear Camera</th>
+						<td>16MP+8MP+2MP</td>
+					</tr>
+					<tr>
+						<th>Front Camera</th>
+						<td>32MP</td>
+					</tr>
+				</table>
+				<br><br><br><br><br>
+				<img width="1340" src="https://candytech.in/wp-content/uploads/2019/08/Vivo-S1-PRO-Image.jpg"/>
+			</body>
+</html>
