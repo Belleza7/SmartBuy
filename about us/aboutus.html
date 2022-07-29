@@ -1,0 +1,148 @@
+
+    <html>
+        <head>
+                <title>
+                    </title>
+                   <style>
+                       * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+  }
+  
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+   .container
+  {
+      width:960px;
+      min-height:500px;
+      background:floralwhite;
+      margin:70px auto 0;
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .container .box
+  {
+position: relative;
+width:300px;
+height: 300px;
+
+margin:5px;
+box-sizing: border-box;
+display:inline-block;
+
+
+
+  }
+  .container .box .imgbox 
+  {
+position:relative;
+overflow: hidden;
+  }
+  .container .box .imgbox img
+  {
+
+    max-width: 100%;
+    transition: transform 2s;
+    
+  }
+  .container .box:hover .imgbox img
+  {
+   
+    transform:scale(1.2);
+  }
+  
+h1{
+    color:floralwhite;
+    
+    text-align: center;
+font-family: sans-serif;
+font-size: 40px;
+}
+p{
+    font-family:Verdana;
+font-size: 30px;  
+text-align: center;
+}
+
+h2{
+
+font-family: cambria;
+font-size: 30px;
+color:aliceblue;
+}
+                       </style>
+    </head>
+        
+    <body style="background-color:powderblue;">
+       <center> <h1>'Customer Satisfaction' is our Motto!</h1></center>
+       <center> <img src="cust.jpg" alt="customer" style="width:50%"/></center>
+       <p> Our talented team crafts the best code<br> and design amazing user experiences<br> of our client.</p>
+       <div class="row">
+           <div class="column">
+               <img src="cust1.jpg" alt="pla" style="width:100%"/>
+               </div>
+               <div class="column">
+                <img src="cust2.jpg" alt="pla" style="width:100%"/>
+                </div>
+                <div class="column">
+                    <img src="cust3.jpg" alt="pla" style="width:100%"/>
+                    </div>
+                    <div class="column">
+                        <img src="cust4.jpg" alt="pla" style="width:100%"/>
+                        </div>
+                        <div class="column">
+                            <img src="cust5.jpg" alt="pla" style="width:100%"/>
+                            </div>
+       </div>
+       <p>Our company evaluates Customer Reviews and reinvigorates your Customized experience.<br> We provide an easy navigational 
+        experience  to turn your shopping tour into an enlightened experience!</p><br>
+        <center><h1>Our Features</h1></center>
+    
+        <div class="container">
+            <div class="box">
+                <div class="imgbox">
+                    <img src="f1.jpg" width=300 height=300 > </div>
+                    
+            </div>
+            
+            <div class="box">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="f2.jpg" width=300 height=300 > </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="f3.jpg" width=300 height=300 > </div>
+                </div>
+            </div>
+            <div class="box"><div class="box">
+                <div class="imgbox">
+                    <img src="f3.png" width=300 height=300 > </div>
+            </div></div>
+            <div class="box"><div class="box">
+                <div class="imgbox">
+                    <img src="f5.png" width=300 height=300 > </div>
+            </div></div>
+            <div class="box"><div class="box">
+                <div class="imgbox">
+                    <img src="f6.jpg" width=300 height=300 > </div>
+            </div></div>
+
+        </div>
+    <p>We provide a variety of brands with latest and retro models .Their specifications and attributes as well as convenient payment methods with cautious secur<>ity.</p>
+      <center><h2> Do visit Again!</h2> </center>
+        </body>
+    </html>
