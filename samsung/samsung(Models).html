@@ -1,0 +1,103 @@
+<html>
+<head>
+
+		<link rel="stylesheet" href="butt.css">
+		<link rel="stylesheet" href="text.css">
+<script src="cart.js"></script>
+</head>
+
+<style>
+		.myDiv {
+  	border: 5px outset grey;
+  	background-color: white;
+  	text-align: center;
+	}
+
+		.float-img
+		{
+		float:left;
+		margin-right:100px;
+		margin-bottom:10px;
+		margin-left:20px;
+		padding-left:50px;
+		}
+		.bttn
+		{
+		background-color:royalblue;
+		color:white;
+		border:white;
+		text-align:center;
+		font-size:20px;
+		}
+input:hover {
+  background-color: darkblue;
+}
+</style>
+
+<body onload="disable()">
+
+<div class="myDiv">  
+	
+	<img src="samsung1.gif" class="float-img"  alt="Not Found" style="height:300;width:500;" align="left"/>
+	<h2 style="color:tomato;"><b>SAMSUNG GALAXY S20(128GB)<br></h2>
+	<h1 style="color:grey;">97,999 <del>1,03,000</del> INR</b></h1>
+	<h2>->12 GB RAM | 128 GB ROM | Expandable Upto 1 TB<br>
+	->17.53 cm (6.9 inch) Quad HD+ Display<br>
+	->108 MP + 48 MP + 12 MP + VGA Depth Camera | 40MP Front Camera<br>
+	->5000 mAh Lithium-ion Battery<br> 
+	->Exynos 990 Processor</h2></br>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('SAMSUNGGALAXYS20','97999')"style=height:50;width:200></center></br>
+  
+<div class="myDiv">
+		<img src="samsung2.gif" class="float-img" alt="Not Found" style="height:300;width:500;" align="left"/>
+		<h2 style="color:tomato;"><b>SAMSUNG M51(128 GB)<br></h2>
+	<h1 style="color:grey;">28,990 INR <del>35,800</del> 7% OFF</b></h1>
+	<h2>->6 GB RAM | 128 GB ROM</br>
+->17.02 cm (6.7 inch) Display</br>
+->64MP Rear Camera</br>
+->7000 mAh Battery</h2>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('SAMSUNGM51','28990')" style=height:50;width:200></center></br>
+  
+<div class="myDiv">
+		<img src="samsung3.gif"  class="float-img" alt="Not Found" style="height:300;width:500; align="left"/>
+		<h2 style="color:tomato;"><b>SAMSUNG A51(128 GB)<br></h2>
+	<h1 style="color:grey;">24,499 INR <del>29,999</del> 9% OFF</b></h1>
+	<h2>->8 GB RAM | 128 GB ROM | Expandable Upto 512 GB</br>
+->16.51 cm (6.5 inch) Full HD+ Display</br>
+->48MP + 12MP + 5MP + 5MP | 32MP Front Camera</br>
+->4000 mAh Lithium-ion Battery</br>
+->Exynos 9611 Processor</h2>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('SAMSUNGA51','24999')" style=height:50;width:200></center></br>
+
+<div class="myDiv">
+		<img src="samsung4.gif" class="float-img" alt="Not Found" style="height:300;width:300;" align="center"/>
+		<h2 style="color:tomato;"><b>SAMSUNG NOTE 10(256 GB)<br></h2>
+	<h1 style="color:grey;">78,500 INR <del>90,860</del> 7% OFF</br></h1>
+	<h2>->8 GB RAM | 256 GB ROM</br>
+->16.0 cm (6.3 inch) Display</br>
+->12MP (Dual Aperture) + 12MP + 16MP | 10MP Front Camera</br>
+->3500 mAh Battery</h2>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('SAMSUNGNOTE10','78560')" style=height:50;width:200></center></br>
+  
+		
+
+<div class="myDiv">
+		<img src="samsung5.gif"  class="float-img" alt="Not Found" style="height:300;width:300;"/>
+		<h2 style="color:tomato;"><b>SAMSUNG GALAXY ZFOLD 2(256 GB)<br></h2>
+	<h1 style="color:grey;">85,790 INR <del>90,800</del> 7% OFF</b></h1>
+	<h2>->8 GB RAM | 256 GB ROM</br>
+->16.0 cm (6.3 inch) Display</br>
+->12MP (Dual Aperture) + 12MP + 16MP | 10MP Front Camera</br>
+->3500 mAh Battery</h2>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('GALAXYFOLD2','85790')" style=height:50;width:200></center></br>
+  
+</div>
+<div class="myDiv">
+	<br><input type="button" class="bttn" value="View Cart" onclick="vcart('Samsung Shopping Cart')" style=height:50;width:200>
+
+<input type="button" class="bttn" value="Remove Item" onclick="rcart('Samsung Shopping Cart')" style=height:50;width:200></br></br>
+<input type="text" id="t1" value="Enter product to be removed" style="color:darkblue;background-color:lightblue;"/></br>
+</div>
+
+</body>
+</html>

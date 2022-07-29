@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="butt.css">
+		<link rel="stylesheet" href="text.css">
+	</head>
+	<style>
+		.bttn
+		{
+		background-color:blue;
+		color:white;
+		border:white;
+		text-align:center;
+		font-size:20px;
+		height:70px;
+		width:250px;
+		}
+	</style>
+<body onload="window_onload()">
+	<img src="samsung.gif" alt="Not found" height="200" width="1500">
+
+	<h2 align="center"><b>2.SAMSUNG</b></h2>
+		<center>
+			<a href="javascript:LinkBan()">
+			 <img src="samsung1.gif" name="Img" id="Img" width="500" height="500"/>
+			 </a>
+			 <br><br>
+			 <input type="button" id="btn1" value="Previous" onclick="showPre()"/>
+			 <input type="button" id="btn2" value="Next" onclick="shownext()"/>
+		</center>
+	<p align="center">The Samsung Group is a South Korean multinational conglomerate headquartered in Samsung Town, Seoul.<br>
+	 It comprises numerous affiliated businesses, most of them united under the Samsung brand, and is the largest South Korean chaebol.<br>
+	Samsung was founded by Lee Byung-chul in 1938 as a trading company.<br>
+	->Industry:Conglomerate<br>
+	->Founded:1 March 1938; 82 years ago in Daegu, Japanese Korea<br>
+	->Founder:Lee Byung-chul<br>
+	->Headquarters:40th floor Samsung Electronics Building, 11, Seocho-daero 74-gil, Seocho District, Seoul, South Korea<br>
+	->Area served:Worldwide</p>
+	<br>
+	<center>
+
+	<img src="new.gif" name="mygif" height="50" width="50" alt="not found"/>
+		<br>
+	 <img class="center" src="samsung6.jpg" height="400" width="300" alt="not found">
+	<p align="center">GALAXY ZFOLD 2 5G<br>
+	EMI STARTING FROM 12,499 INR</p>
+	<input type="button" class="bttn" value="Buy" onclick="myfunction()">
+	</center>
+	<script>
+		var imgs=new Array("samsung1.gif","samsung2.gif","samsung3.gif","samsung4.gif","samsung5.jpg","buy.gif");
+			var imgLink=new Array('Samsung_s20.html','Samsung_m51.html','Samsung_s20.html','Samsung_Note10.html','Samsung_z2.html','samsung(Models).html');
+			var i=0;
+			function LinkBan()
+			{
+				document.location.href="file:///C:/Users/hp/OneDrive/Desktop/CSS%20WEBSITE/samsung/"+imgLink[i];
+			}			
+			function showPre()
+			{
+				if(document.images)
+				{
+					--i;
+					if(i<0)
+					{
+						i=imgs.length-1;
+					}
+				Img.src=imgs[i];
+				}
+			}
+			function shownext()
+			{
+				if(document.images)
+				{
+					i++;
+					if(i==imgs.length)
+					{
+						i=0;
+					}
+				Img.src=imgs[i];
+				}
+			}
+			function myfunction()
+		{
+			window.location.href="file:///C:/Users/hp/OneDrive/Desktop/CSS%20WEBSITE/samsung/samsung(Models).html";
+		}
+		</script>
+</body>
+</html>

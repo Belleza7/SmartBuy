@@ -1,0 +1,32 @@
+
+h1
+{
+font-family: cambria;
+font-size: 35px;
+color:darkblue;
+}
+h2
+{
+font-family: cambria;
+
+color:deepskyblue;
+font-size: 30px;
+}
+h3
+{
+font-family: serif;
+font-size: 25px;
+font-color:royalblue;
+color:darkblue;
+}
+h4
+{
+font-family: serif;
+font-size: 20px;
+font-color:darkblue;
+color:royalblue;
+}
+.radio-item
+{
+color:royalblue;
+}
