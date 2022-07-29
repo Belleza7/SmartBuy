@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="butt.css">
+		<link rel="stylesheet" href="text.css">
+	</head>
+	<style>
+		.bttn
+		{
+		background-color:blue;
+		color:white;
+		border:white;
+		text-align:center;
+		font-size:20px;
+		height:70px;
+		width:250px;
+		}
+		.h1text
+		{
+		align:center;
+		height:50;
+		width:100;
+		}
+	</style>
+<body>
+	
+	<img src="apple.gif" alt="Not found" height="150" width="150">
+	
+	<center>
+	<h2 class="h1text"><b>1.IPHONE</b></h2>
+	<a href="javascript:LinkBan()">
+	<img src="iphone1.gif" name="Img" id="Img" height="800" width="1000"/><br>
+	</a>
+	<br><br>
+	 <input type="button" id="btn1" value="Previous" onclick="showPre()"/>
+	<input type="button" id="btn2" value="Next" onclick="shownext()"/>
+	</center>
+	<p align="center">->The first-generation iPhone was announced by Apple co-founder Steve Jobs on January 9, 2007.<br>
+	 Since then Apple has annually released new iPhone models and iOS updates.<br>
+	 As of November 1, 2018, more than 2.2 billion iPhones had been sold.<br>
+	->Developer: Apple Inc.<br>
+	->Manufacturer:Foxconn, Pegatron
+	(contract manufacturers)<br>
+	->Type:Smartphone<br>
+	->Release date: June 29, 2007<br>
+	->Storage:4, 8, 16, 32, 64, 128, 256 or 512 GB flash memory</p>
+	<br>
+	<center>
+
+	<img src="new.gif"  name="mygif" height="50" width="50" alt="not found"/>
+		<br>
+	 <img class="center" src="iphone6.jpg" height="400" width="300" alt="not found">
+	<p align="center">IPHONE[SE]<br>
+	LOTS OF LOVE.<br>
+	LESS TO SPEND.<br>
+	FROM 42,500 INR</p>
+	<input type="button" class="bttn" value="Buy" onclick="myfunction()">
+	</center>
+
+	
+
+	<script>
+			var imgs=new Array("iphone1.gif","iphone2.gif","iphone3.gif","iphone4.gif","iphone5.gif","buy.gif");
+			var imgLink=new Array('Iphone_x.html','Iphone_xr.html','Iphone_x.html','Iphone_11.html','Iphone_xs.html','Iphone(models).html');
+			var i=0;
+			function LinkBan()
+			{
+				document.location.href="file:///C:/Users/hp/OneDrive/Desktop/CSS%20WEBSITE/iphone/"+imgLink[i];
+			}			
+			function showPre()
+			{
+				if(document.images)
+				{
+					--i;
+					if(i<0)
+					{
+						i=imgs.length-1;
+					}
+				Img.src=imgs[i];
+				}
+			}
+			function shownext()
+			{
+				if(document.images)
+				{
+					i++;
+					if(i==imgs.length)
+					{
+						i=0;
+					}
+				Img.src=imgs[i];
+				}
+			}
+			function myfunction()
+			{
+				window.location.href="file:///C:/Users/Tahera/Documents/CSS/micro/iphone/Iphone(models).html";
+			}
+		</script>
+	</body>
+</html>

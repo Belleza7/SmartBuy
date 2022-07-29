@@ -1,0 +1,104 @@
+<html>
+<head>
+
+		<link rel="stylesheet" href="butt.css">
+		<link rel="stylesheet" href="text.css">
+</head>
+<style>
+		.myDiv {
+  	border: 5px outset grey;
+  	background-color: white;
+  	text-align: center;
+	}
+
+		.float-img
+		{
+		float:left;
+		margin-right:100px;
+		margin-bottom:10px;
+		margin-left:20px;
+		padding-left:50px;
+		}
+		.bttn
+		{
+		background-color:royalblue;
+		color:white;
+		border:white;
+		text-align:center;
+		font-size:20px;
+		
+		}
+input:hover {
+  background-color: darkblue;
+}
+</style>
+<script src="cart.js"></script>
+<body onload="disable()">
+
+<div class="myDiv">  
+	
+	<img src="iphone11.jpg" class="float-img"  alt="Not Found" style="height:300;width:500;" align="left"/>
+	<h2 style="color:tomato;"><b>IPHONE X(64GB)<br></h2>
+	<h1 style="color:grey;">53,500 INR</b></h1>
+	<h2>->64 GB ROM<br>
+	->14.73 cm (5.8 inch) Super Retina HD Display<br>
+	->12MP + 12MP | 7MP Front Camera<br>
+	->A11 Bionic Chip with 64-bit Architecture,<br> Neural Engine, Embedded M11 Motion<br> Coprocessor Processor<br>
+	->iOS 13 Compatible</h2></br>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('IPHONEX','53500')" style=height:50;width:200></center></br>
+  
+<div class="myDiv">
+		<img src="iphone12.jpg" class="float-img" alt="Not Found" style="height:300;width:500;" align="left"/>
+		<h2 style="color:tomato;"><b>APPLE IPHONE XR (128 GB)<br></h2>
+	<h1 style="color:grey;">57,500 INR <del>67,800</del> 7% OFF</b></h1>
+	<h2>->64 GB ROM<br>
+	->15.49 cm (6.1 inch) Liquid Retina HD Display<br>
+	->12MP Rear Camera | 7MP Front Camera<br>
+	->12MP + 12MP | 12MP Front Camera<br>
+	->A13 Bionic Chip Processor</h2>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('IPHONEXR','57500')" style=height:50;width:200></center></br>
+  
+<div class="myDiv">
+		<img src="iphone13.jpg"  class="float-img" alt="Not Found" style="height:300;width:500; align="left"/>
+		<h2 style="color:tomato;"><b>APPLE IPHONE 11 (64 GB)<br></h2>
+	<h1 style="color:grey;">37,900 INR <del>42,500</del> 9% OFF</b></h1>
+	<h2>->128 GB ROM<br>
+	->115.49 cm (6.1 inch) Display<br>
+	->12MP Rear Camera | 7MP Front Camera<br>
+	->A12 Bionic Chip Processor<br>
+	->iOS 13 Compatible</h2>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('IPHONE11','37900')" style=height:50;width:200></center></br>
+
+<div class="myDiv">
+		<img src="iphone14.jpg" class="float-img" alt="Not Found" style="height:300;width:300;" align="center"/>
+		<h2 style="color:tomato;"><b>APPLE IPHONE SE (64 GB)<br></h2>
+	<h1 style="color:grey;">47,500 INR <del>57,800</del> 10% OFF</b></h1>
+	<h2>->64 GB ROM<br>
+	->11.94 cm (4.7 inch) Retina HD Display<br>
+	->12MP Rear Camera | 7MP Front Camera<br>
+	->A13 Bionic Chip with 3rd Gen Neural Engine Processor<br>
+	->Water and Dust Resistant (1 meter for Upto 30 minutes, IP67)</h2>
+	<center><input type="button" class="bttn" value="Add To Cart" onclick="cart('IPHONESE','47500')" style=height:50;width:200></center></br>
+  
+		
+
+<div class="myDiv">
+		<img src="iphone15.jpg"  class="float-img" alt="Not Found" style="height:300;width:300;"/>
+		<h2 style="color:tomato;"><b>APPLE IPHONE XS MAX (256 GB)<br></h2>
+	<h1 style="color:grey;">78,790 INR <del>80,800</del> 7% OFF</b></h1>
+	<h2>->256 GB ROM<br>
+	->11.94 cm (4.7 inch) Retina HD Display<br>
+	->12MP Rear Camera | 7MP Front Camera<br>
+	->A13 Bionic Chip with 3rd Gen Neural Engine Processor<br>
+	->Water and Dust Resistant (1 meter for Upto 30 minutes, IP67)</h2>
+	<center><input type="button"class="bttn"  value="Add To Cart" onclick="cart('IPHONEXSMAX','78790')" style=height:50;width:200></center></br>
+</div>
+<div class="myDiv">
+	<br><input type="button" class="bttn" value="View Cart" onclick="vcart('IPhone Shopping Cart')" style=height:50;width:200>
+
+<input type="button" class="bttn" value="Remove Item" onclick="rcart('IPhone Shopping Cart')" style="height:50;width:200"></br></br>
+<input type="text" id="t1" value="Enter product to be removed" style="color:darkblue;background-color:lightblue;"/></br>
+</div>
+
+</body>
+</html>
