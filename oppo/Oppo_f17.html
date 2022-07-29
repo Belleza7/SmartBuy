@@ -1,0 +1,152 @@
+<html>
+	<head>
+		<title>
+			Oppo_f17
+		</title>
+		<link rel="stylesheet" href="butt.css">
+	</head>
+	<style>
+		td, th {
+			border: 1px solid #E6E6FA;
+			text-align: left;
+			padding: 8px;
+			font-size:25px;
+		}
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+		.float-img{
+			float:left;
+			margin-right:100px;
+			margin-bottom:10px;
+			padding.left: 20px;
+			margin-left:20px;
+		}
+		.padding-table-column td{
+			padding:10 15px;
+		}
+		.vl {
+			border-left: 3px solid DARKSLATEGRAY ;
+			height:300px;
+			position: absolute;
+			left: 70%;
+			margin-left: 30px;
+			top: 150px;
+			margin-right:10px;
+			}
+			.button {
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+			margin: 4px 2px;
+			cursor: pointer;
+			style-align:center;
+			margin-left: 121px;
+			margin-top: 30px;
+			}
+		</style>
+	<script>
+		var Banner=new Array("Oppo_f17(1).jpg","Oppo_f17(2).jpg","Oppo_f17(3).jpg","Oppo_f17(4).jpg","Oppo_f17(5).jpg");
+		var count=0;
+		function rotate()
+		{
+			if(document.images)
+			{
+				count++;
+				if(count==Banner.length)
+				{
+					count=0;
+				}
+				document.img1.src=Banner[count];
+				setTimeout("rotate()",1000);
+			}
+		}
+		function myfunction()
+		{
+			window.location.href="file:///C:/Users/Tahera/Documents/CSS/micro/oppo/oppo(models).html";
+		}
+	</script>
+	<body onload="rotate()">
+			<center><font size="20px"><b>Oppo</b></font></center><br>
+			<img src="Oppo_f17(1).jpg" width="380" height="400" name="img1" class="float-img" align="left" title="OPPO F17"/>
+				<font size="10px"><b>OPPO F17</b></font>
+				<div class="vl">
+					<font size="5px"><br>
+					Deal Price:<font size="10px" color="ROYALBLUE">₹17,990</font><br>
+					Offer Price:₹17,990 <strike></strike><br>
+					MRP:<strike>₹20,990</strike> (Inclusive of all taxes)<br>
+					<font color="green">You Save: ₹3,000</font><br>
+					<input type="button" value="ADD TO CART" id="btn1" onclick="myfunction()" class="button"/>
+					</font>
+				</div>
+				<hr><font size="5px">
+				<li>16.35 cm  Super AMOLED Display</li>
+				<li>2.0 GHz  Snapdragon 662 Processor</li>
+				<li>Android 10 Operating System</li>
+				<li>16MP AI Ultra Wide Quad Camera</li>
+				<li>16MP Front Camera</li>
+				<li>In-Display Fingerprint Unlock</li>
+				<li>30W VOOC Flash Charge 3.0</li>
+				<li>4015 mAh Lithium-ion Battery</li>
+				<li>MediaTek Helio P95 Processor</li>
+				<li>More about  click on the link bellow</li>
+				<a href='#disc'><font color="DEEPSKYBLUE" size="5px"><b>Technical Details</b></font></a>
+				</font><br><br><br><br><br><br><br>
+				<img width="1340" src="https://www.oppo.com/content/dam/oppo/product-asset-library/a/a93/v1/kv-1024.jpg"/>
+				<br><br><br><center><font size="20px" id="disc"><b> Technical Details<br><br></font></b>
+				
+				<table align="center" class="padding-table-column" border="1px" rules="rows" size="10px">
+					<tr>
+						<th>Model</th>
+						<td>F17</td>
+					</tr>
+					<tr>
+						<th>Internal Storage</th>
+						<td>128 GB</td>
+					</tr>
+					<tr>
+						<th>Processor</th>		
+						<td>2.0 GHz Octa-core Snapdragon 662 Processor</td>
+					</tr>
+					<tr>
+						<th>Height</th>
+						<td>15.98 cms</td>
+					</tr>
+					<tr>
+						<th>Width</th>
+						<td>7.28 cms</td>
+					</tr>
+					<tr>
+						<th>Thickness</th>
+						<td>0.75 cms</td>
+					</tr>
+					<tr>
+						<th>Sensors</th>
+						<td>Fingerprint Sensor</td>
+					</tr>
+					<tr>
+						<th>Battery Capacity</th>
+						<td>4000 mAh</td>
+					</tr>
+					<tr>
+						<th>Selfie Camera</th>
+						<td>16 MP</td>
+					</tr>
+					<tr>
+						<th>Screen Size (Diagonal)</th>
+						<td>16.35 cm (6.44 inch)</td>
+					</tr>
+					<tr>
+						<th>Features and SAR Value</th>
+						<td>Ultra Sleek Leather Feel Body Eye-Caring Screen 4000 mAh Battery Front Night Mode and Head: 1.437 W/kg, Body: 1.410 W/kg</td>
+					</tr>
+				</table>
+				<br><br><br><br><br>
+				<img width="1340" src="https://www.oppo.com/content/dam/oppo/product-asset-library/a/a93/v1/sec-4-img-0-1024.jpg"/>
+				<img width="1340" height="1800" src="https://www.oppo.com/content/dam/oppo/product-asset-library/a/a93/v1/sec-6-img-2.png"/>
+			</body>
+</html>

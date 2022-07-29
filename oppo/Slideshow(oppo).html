@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="butt.css">
+		<link rel="stylesheet" href="text.css">
+	</head>
+	<style>
+		.bttn
+		{
+		background-color:blue;
+		color:white;
+		border:white;
+		text-align:center;
+		font-size:20px;
+		height:70px;
+		width:250px;
+		}
+	</style>
+<body onload="window_onload()">
+	<img src="oppo.gif" alt="Not found" height="200" width="1500">
+	<h2 align="center"><b>4.OPPO</b></h2>
+		<center>
+			<a href="javascript:LinkBan()">
+			 <img src="oppo1.jpg" name="Img" id="Img" width="500" height="500"/>
+			 </a>
+			 <br><br>
+			 <input type="button" id="btn1" value="Previous" onclick="showPre()"/>
+			 <input type="button" id="btn2" value="Next" onclick="shownext()"/>
+		</center>
+	<p align="center">->Guangdong Oppo Mobile Telecommunications Corp., Ltd, stylized as oppo,<br>
+	 is a Chinese consumer electronics and mobile communications company headquartered in Dongguan, Guangdong.<br>
+	 It is a subsidiary of BBK Electronics along with Vivo, OnePlus and Realme. The Oppo Logo changed in 2019 after the launch of Oppo Reno<br>
+	->Parent organization: BBK Electronics<br>
+	->Founder: Tony Chen<br>
+	->Founded: 2004, Dongguan, China<br>
+	->Subsidiaries: Realme, OnePlus</p>
+	<br>
+	<center>
+
+	<img src="new.gif" name="mygif" height="50" width="50" alt="not found"/>
+		<br>
+	 <img class="center" src="oppo6.jpg" height="400" width="300" alt="not found">
+	<p align="center">OPPO F17 PR0<br>
+	FALUNT IT YOUR WAY !!!<br>
+	FROM 22,990 INR</p>
+	<input type="button" class="bttn"  value="Buy" onclick="myfunction()">
+	</center>
+	<script>
+			var imgs=new Array("oppo1.jpg","oppo2.jpg","oppo3.jpg","oppo4.jpg","oppo5.jpg","buy.gif");
+			var imgLink=new Array('Oppo_a93.html','Oppo_4z.html','Oppo_a33.html','Oppo_f17.html','Oppo_a12.html','oppo(models).html');
+			var i=0;
+			function LinkBan()
+			{
+				document.location.href="file:///C:/Users/hp/OneDrive/Desktop/CSS%20WEBSITE/oppo/"+imgLink[i];
+			}			
+			function showPre()
+			{
+				if(document.images)
+				{
+					--i;
+					if(i<0)
+					{
+						i=imgs.length-1;
+					}
+				Img.src=imgs[i];
+				}
+			}
+			function shownext()
+			{
+				if(document.images)
+				{
+					i++;
+					if(i==imgs.length)
+					{
+						i=0;
+					}
+				Img.src=imgs[i];
+				}
+			}
+			function myfunction()
+		{
+			window.location.href="file:///C:/Users/hp/OneDrive/Desktop/CSS%20WEBSITE/oppo/oppo(models).html";
+		}
+		</script>
+</body>
+</html>
